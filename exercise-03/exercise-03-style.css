@@ -3,28 +3,39 @@ body {
 }
 h2 {
     color:whitesmoke;
-    font-family: 'Dongle', sans-serif;;
-    font-size: 64px;
-    text-align: center;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 80px;
+    text-align: left;
+    line-height:100%;
 }
 h3 {
     color:whitesmoke;
-    font-family: 'Dongle', sans-serif;;
-    font-size: 56px;
-    text-align: center;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 48px;
+    text-align: left;
+    line-height:25%
 }
 p {
     color: whitesmoke;
-    font-family: 'Dongle', sans-serif;;
-    font-size: 48px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 22px;
     text-align: justify;
+    line-height:130%;
 }
 a {
     color: whitesmoke;
-    font-family: 'Dongle', sans-serif;;
-    font-size: 48px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 36px;
     text-align: center;
 }
-div {
-    width:50%
+span.a {
+    display:inline-block;
+    width:50%;
+    padding:15px
+}
+
+span.b {
+    display:inline-block;
+    width: 50%;
+    padding:15px
 }

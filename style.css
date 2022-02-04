@@ -3,25 +3,25 @@ body {
 }
 h1 {
     color:whitesmoke;
-    font-family:'Franklin Gothic Medium';
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size:48px;
     text-align:left
 }
 h2 {
     color:whitesmoke;
-    font-family:'Franklin Gothic Medium';
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 24px;
     text-align:left
 }
 p {
     color: whitesmoke;
-    font-family:'Franklin Gothic Medium';
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 48px;
     text-align: center;
 }
 ul {
     color: whitesmoke;
-    font-family:'franklin gothic';
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 16px;
     text-align:left;
 }
