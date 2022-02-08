@@ -41,6 +41,10 @@ img {
     margin-left: auto;
 }
 
+a:link {
+    text-decoration: none;
+    color: whitesmoke;
+}
 a:visited {
     text-decoration: none;
     color: whitesmoke;
