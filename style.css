@@ -40,3 +40,8 @@ img {
     display:block;
     margin-left: auto;
 }
+
+a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
