@@ -12,50 +12,44 @@ body {
 
 div.a {
     display:block;
-    margin: 0px 0px 10px 0px;
+    margin: 0;
     text-align:center;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     text-decoration: none;
 }
 
-div.b {
+.container {
     display:flex;
-    margin: 0px 5px 10px 5px;
+    margin: 0;
     width:100%;
     height:100vh;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     text-decoration: none;
+    align-items:stretch;
+    align-items:center;
+    justify-content: space-around;
 }
 
-span.left {
-    display:inline-flex;
-    width:2%;
-    height: 100%;
-    margin: 5px 10px 0px 0px;
-    vertical-align:middle;
-    justify-content: center;
-    align-items: center;
-}
-
-span.center {
-    display:inline-flex;
-    width:93%;
-    height: 100%;
-    margin: 5px 0px 0px 0px;
-    vertical-align: middle;
+.left {
+    width:8%;
+    margin: 10px;
+    padding: 5px;
     text-align:center;
-    justify-content: center;
-    align-items: center;
 }
 
-span.right {
-    display:inline-flex;
-    width: 2%;
-    height: 100%;
-    margin: 5px 0px 0px 10px;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
+.center {
+    background-color: tomato;
+    margin: 10px;
+    padding: 5px;
+    text-align:center;
+}
+
+.right {
+    width: 8%;
+    margin: 10px;
+    padding:5px;
+    right: 5px;
+    text-align:center;
 }
 
 a:link {
@@ -65,21 +59,28 @@ a:link {
 }
 
 a.prev:hover {
-    position: absolute;
     top: auto;
     left: 0;
-    font-size:75em;
+    font-size:35em;
     text-decoration: none;
 }
 
 a.next:hover {
-    position:absolute;
     top:auto;
-    right: 0;
-    font-size: 75em;
+    text-align:center;
+    font-size: 35em;
+    width:100%;
 }
 
 a:visited {
     text-decoration: none;
     color: whitesmoke;
+}
+
+.right:hover {
+    width: 100%;
+}
+
+.left:hover {
+    width:100%;
 }
