@@ -1,6 +1,4 @@
-* {
-    margin: 5px;
-}
+
 
 :root {
     cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
@@ -16,7 +14,6 @@ div.a {
     text-align:center;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     text-decoration: none;
-    background-color:tomato;
 }
 
 .container {
