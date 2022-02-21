@@ -57,16 +57,11 @@ a:link {
 }
 
 a.prev:hover {
-    top: auto;
-    left: 0;
-    font-size:35em;
     text-decoration: none;
 }
 
 a.next:hover {
-    top:auto;
-    text-align:center;
-    font-size: 35em;
+
     width:100%;
 }
 
@@ -76,9 +71,15 @@ a:visited {
 }
 
 .right:hover {
+    top:auto;
+    text-align:center;
+    font-size: 35em;
     width: 100%;
 }
 
 .left:hover {
+    top: auto;
+    left: 0;
+    font-size:35em;
     width:100%;
 }
