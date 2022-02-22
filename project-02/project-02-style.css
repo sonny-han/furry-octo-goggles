@@ -56,20 +56,23 @@ a:link {
     display:block;
     font-size: 1em;
     text-decoration: none;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
 }
 
 a.prev:hover {
     text-decoration: none;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
 }
 
 a.next:hover {
-
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
     width:100%;
 }
 
 a:visited {
     text-decoration: none;
     color: whitesmoke;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
 }
 
 .right:hover {
@@ -77,6 +80,7 @@ a:visited {
     text-align:center;
     font-size: 35em;
     width: 100%;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
 }
 
 .left:hover {
@@ -84,6 +88,7 @@ a:visited {
     left: 0;
     font-size:35em;
     width:100%;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
 }
 
 img {

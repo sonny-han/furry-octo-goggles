@@ -10,11 +10,11 @@ html, body {
 }
 
 .container {
-    position:relative;
     display: flex;
     background:rgb(0, 140, 255);
     flex-direction: column;
     height:100vh;
+    padding:5px;
 }
 
 header {
@@ -25,39 +25,55 @@ header {
 
 }
 
-footer {
-    height: 5vh;
-    background:rgb(0, 140, 255);
-    text-align:center;
-    z-index:1;
-    position: absolute;
-    width:100%;
-    bottom:0px;
-
-}
-
 main {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 100px;
+    overflow:auto;
+}
+
+.eng, .por {
+    width: 50%;
+    height: fit-content;
+    background-color:whitesmoke;
+    margin:20px;
+    transform: rotate(0deg);
+    padding:5px;
+
 }
 
 .eng {
-    width: 40%;
-    height: fit-content;
-    background-color:tomato;
-    margin:10px;
-    transform: rotate(0deg);
+    transform: rotate(-1deg)
 }
 
 .por {
-    width: 40%;
-    height: fit-content;
-    background-color:whitesmoke;
-    margin:10px;
-    transform: rotate(2deg);
+    transform: rotate(1deg)
+}
+
+h2 {
+    color: #1c2429;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    line-height:100%;
+    transform: rotate(-5deg);
+}
+h3 {
+    color:1c2429;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 24px;
+    text-align: right;
+    line-height:25%;
+    transform:rotate(5deg);
+}
+
+p {
+    color: 1c2429;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height:130%;
 }
 
 @media (max-width:1024px) {
@@ -66,12 +82,33 @@ main {
     justify-content: space-around;
     }
 
-    .eng {
-        width: 512px;
+    .container, header {
+        background-color: whitesmoke;
     }
 
+    .eng, .por {
+    width:auto;
+    background-color:rgb(0, 140, 255)
+    }
+
+    .eng {
+        transform: rotate(1deg)
+    }
+    
     .por {
-        width: 512px;
+        transform: rotate(-1deg)
+    }
+
+    h2 {
+        transform: rotate(5deg)
+    }
+
+    h3 {
+        transform: rotate(-5deg)
+    }
+
+    h2, h3, p {
+        color: whitesmoke;
     }
 }
 
@@ -79,66 +116,137 @@ main {
     main {
     flex-direction: column;
     justify-content: space-around;
+    display:inline-block;
+    }
+
+    .container, header {
+        background-color: rgb(0, 140, 255)
+    }
+
+
+    .eng, .por {
+        width:90%;
+        background-color:tomato;
     }
 
     .eng {
-        width: fit-content;
-        height: fit-content;
+        transform: rotate(-1deg)
+    }
+    
+    .por {
+        transform: rotate(1deg)
+    }
+    
+    h2 {
+        transform: rotate(-5deg)
     }
 
-    .por {
-        width: fit-content;
-        height: fit-content;
+    h3 {
+        transform: rotate(5deg)
     }
+
 }
 
 @media (max-width: 600px) {
     main {
     flex-direction: column;
     justify-content: space-around;
+    display:inline-block;
+    }
+
+    .container, header {
+        background-color: tomato;
+    }
+
+    .eng, .por {
+        background-color:rgb(0, 140, 255);
+        width:90%;
     }
 
     .eng {
-        width: fit-content;
-        height: fit-content;
+        transform: rotate(1deg)
+    }
+    
+    .por {
+        transform: rotate(-1deg)
+    }
+    
+    h2 {
+        transform: rotate(5deg)
     }
 
-    .por {
-        width: fit-content;
-        height: fit-content;
+    h3 {
+        transform: rotate(-5deg)
     }
+
 }
 
 @media (max-width: 480px) {
     main {
     flex-direction: column;
     justify-content: space-around;
+    display:inline-block;
+    }
+
+    .container, header {
+        background-color: whitesmoke;
+    }
+
+    .eng, .por {
+        width:90%;
     }
 
     .eng {
-        width: fit-content;
-        height: fit-content;
+        transform: rotate(-1deg)
+    }
+    
+    .por {
+        transform: rotate(1deg)
+    }
+    
+    h2 {
+        transform: rotate(-5deg)
     }
 
-    .por {
-        width: fit-content;
-        height: fit-content;
+    h3 {
+        transform: rotate(5deg)
     }
+
 }
 
 @media (max-width: 320px) {
     main {
     flex-direction: column;
     justify-content: space-around;
+    display:inline-block;
     }
 
+    .container, header {
+        background-color: rgb(0, 140, 255);
+    }
+
+    .eng, .por {
+        background-color:whitesmoke;
+        width:90%;
+    }
+    
     .eng {
-        width: fit-content;
-        height: fit-content;
+        transform: rotate(1deg)
+    }
+    
+    .por {
+        transform: rotate(-1deg)
+    }
+    
+    h2 {
+        transform: rotate(5deg)
     }
 
-    .por {
-        width: fit-content;
-        height: fit-content;
+    h3 {
+        transform: rotate(-5deg)
+    }
+
+    h2, h3, p {
+        color:black;
     }
 }
