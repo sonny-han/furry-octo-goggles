@@ -87,6 +87,6 @@ a:visited {
 }
 
 img {
-    max-width:50%;
+    max-height: 800px;
     object-fit: contain;
 }
