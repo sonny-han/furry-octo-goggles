@@ -1,7 +1,7 @@
 let day = ['Monday', 'Tuesday', 'Wedesnday', 'Thurdsay', 'Friday', 'Saturday', 'Sunday'];
-let adjective = ['sweaty', 'sweet', 'seductive', 'agonizing', 'green'];
-let noun = ['feet', 'steel', 'mold', 'coffee', 'gasoline'];
-let verb = ['smiled', 'puked', 'jumped', 'winced', 'gasped', 'wondered', ]
+let adjective = ['sweaty', 'sweet', 'seductive', 'agonizing', 'green', 'blissful', 'musty', 'chocolatey', 'dank', 'sharp', 'earthy', 'delicious', 'citric'];
+let noun = ['feet', 'steel', 'mold', 'coffee', 'gasoline', 'chocolate', 'the cat', 'the drywall', 'beer', 'wine', 'despair', 'bliss', 'milk', 'the outside', 'the inside', 'the kitchen', 'earthworms', 'the president', 'the squirrel', 'carrots'];
+let verb = ['smiled', 'puked', 'jumped', 'winced', 'gasped', 'wondered', 'hurled', 'spat', 'chuckled', 'twitched', 'yawned', 'chortled', 'wept', 'screamed']
 const RandomDay = Math.floor(Math.random() * day.length);
 const RandomAdjective = Math.floor(Math.random() * adjective.length);
 const RandomNoun = Math.floor(Math.random() * noun.length);

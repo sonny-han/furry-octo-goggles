@@ -11,7 +11,60 @@
     
     body {
         background-color:papayawhip;
-        font-family: 'Playfair Display', serif;
-        height:100vh;
-        font-size: 10vh;
+        height:100%;
+        display:flex;
+        flex-direction:column;
     }
+
+    .flex-container {
+        display:flex;
+        flex-direction:column;
+        height:100vh;
+        width: 100%;
+    }
+
+    .poem, footer {
+        padding: 5px;
+    }
+
+    .poem {
+        font-family: 'Playfair Display', serif;
+        font-size: 8em;
+    }
+
+    .navigation {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        height: 60px;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .refresh {
+        width: 30%;
+        text-align:left;
+        text-decoration:none;
+        line-height:60px;
+        font-size:2em;
+    }
+
+    .home {
+        width: 30%;
+        text-align:right;
+        text-decoration:none;
+        line-height:60px;
+        font-size:2em;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: #444444;
+    }
+    a:visited {
+        color: #444444;
+    }
+
+    a:hover {
+        font-style:italic;
+    }
+
