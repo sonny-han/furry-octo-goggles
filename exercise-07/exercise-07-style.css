@@ -43,7 +43,6 @@
     .refresh {
         width: 30%;
         text-align:left;
-        text-decoration:none;
         line-height:60px;
         font-size:2em;
     }
@@ -51,7 +50,6 @@
     .home {
         width: 30%;
         text-align:right;
-        text-decoration:none;
         line-height:60px;
         font-size:2em;
     }
