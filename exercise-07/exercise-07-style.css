@@ -30,6 +30,7 @@
     .poem {
         font-family: 'Playfair Display', serif;
         font-size: 8em;
+        line-height:98%;
     }
 
     .navigation {
