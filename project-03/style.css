@@ -7,4 +7,36 @@
     html, body {
         height:100%;
         width:100%;
+        font-family: 'Playfair Display', serif;
     }
+
+body {
+    background-color: #202124;
+}
+
+.container {
+    height:100%;
+    width: 100%;
+    background-color: blue;
+    display:flex;
+}
+
+.welcome {
+    height: 400px;
+    width: 400px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /* background-color:green; */
+}
+
+.welcome h2 {
+    color: whitesmoke;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    font-size: 3.5em;
+}
