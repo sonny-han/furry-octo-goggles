@@ -28,6 +28,6 @@ $('img').randomOrder(false);
 $('img').draggable({stack: "img"});
 
 // Change after 10 Seconds
-//window.setInterval(function(){
-//  $('img').randomOrder(true);
-//}, 10000);
+window.setInterval(function(){
+  $('img').randomOrder(true);
+}, 10000);
