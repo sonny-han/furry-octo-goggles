@@ -23,7 +23,6 @@ body {
 
 .container:after {
     display: none;
-    content: url(https://user-images.githubusercontent.com/97996962/162998259-dfcda495-35d8-4f3f-b7c9-5a4c178086c0.png) url(https://user-images.githubusercontent.com/97996962/162998257-05cb03ec-9fac-4f4a-ba27-d457694e2d2a.png);
 }
 .welcome {
     height: 400px;
@@ -45,10 +44,8 @@ h2 {
     font-size: 3.5em;
 }
 
-.spam {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
+img {
+    max-width: 500px;
     height: auto;
-}
+    position: absolute;
+  }

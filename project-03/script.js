@@ -1,17 +1,33 @@
-const spam = [
-    {
-        name: "spam01",
-        image: "https://user-images.githubusercontent.com/97996962/162998259-dfcda495-35d8-4f3f-b7c9-5a4c178086c0.png"
-    },
-    {
-        name: "spam02",
-        image: "https://user-images.githubusercontent.com/97996962/162998257-05cb03ec-9fac-4f4a-ba27-d457694e2d2a.png"
-    }
-]
-
-function showPicture() {
-    var sourceOfPicture = "https://user-images.githubusercontent.com/97996962/162998257-05cb03ec-9fac-4f4a-ba27-d457694e2d2a.png";
-    var img = document.getElementById('spam')
-    img.src = sourceOfPicture.replace('90x90', '225x225');
-    img.style.display = "block"
+function getRandomInt (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+$.fn.randomOrder = function(animate) {
+  this.each(function() {
+    var image = $(this);
+    
+    // Viewport Dimensions
+    var vpHeight = $(window).height();
+    var vpWidth = $(window).width();
+    
+    // Image Position
+    var xPos = getRandomInt(0, vpWidth - image.width());
+    var yPos = getRandomInt(0, vpHeight - image.height());
+    var zIndex = getRandomInt(0,13);
+    
+    // Animation Duration
+    if(animate) var dur = 500;
+    else var dur = 0;
+    
+    image.animate({left: xPos, top: yPos, 'z-index': zIndex}, dur);
+  });
+};
+
+//Setup
+$('img').randomOrder(false);
+$('img').draggable({stack: "img"});
+
+// Change after 10 Seconds
+//window.setInterval(function(){
+//  $('img').randomOrder(true);
+//}, 10000);
