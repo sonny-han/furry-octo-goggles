@@ -31,3 +31,17 @@ $('img').draggable({stack: "img"});
 window.setInterval(function(){
   $('img').randomOrder(true);
 }, 10000);
+
+const spacebar = Event.key;
+
+if (spacebar == "a" || spacebar == "a") {
+    alert ("You pressed the A key");
+    console.log("You pressed the A key!")
+}
+
+document.body.addEventListener("click", function (evt) {
+    console.dir(this);
+    console.log(evt.target);
+    alert("body clicked");
+});
+//var img = document.getElementById("img").src;
