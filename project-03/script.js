@@ -39,10 +39,17 @@ window.setInterval(function(){
 //    console.log("You pressed the A key!")
 //}
 
+//Hide all images
+document.getElementsByClassName('images')[0].style.display = 'none'
+
+//Click Event
 document.body.addEventListener("click", function (evt) {
-    console.dir(this);
-    console.log(evt.target);
-    //alert("body clicked");
-    var img = document.getElementById("img").src
+  console.dir(this);
+  console.log(evt.target);
+  alert("body clicked");
+  function show() {
+    document.getElementById('image').style.display = "block";
+
+  }
 });
 //var img = document.getElementById("img").src;
