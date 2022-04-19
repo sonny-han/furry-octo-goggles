@@ -40,7 +40,7 @@ window.setInterval(function(){
 //}
 
 //Hide all images
-document.getElementsByClassName('images')[0].style.display = 'none'
+//document.getElementsByClassName('images')[0].style.display = 'none'
 
 //Click Event
 document.body.addEventListener("click", function (evt) {
