@@ -82,3 +82,4 @@ function userClicked() {
     }
     document.body.appendChild(img);
 }
+
